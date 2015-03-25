@@ -24,11 +24,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLD-Ck-5dC">
-                                <rect key="frame" x="193" y="494" width="90" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="lsW-wo-KE4"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLD-Ck-5dC">
+                                <rect key="frame" x="104" y="475" width="90" height="30"/>
                                 <state key="normal" title="Umm, Okay?">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -36,11 +33,8 @@
                                     <action selector="findLocationOnTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0dt-Dq-Pzt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1JW-SR-dOl">
-                                <rect key="frame" x="370" y="494" width="79" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="79" id="Rnb-gW-9Vz"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1JW-SR-dOl">
+                                <rect key="frame" x="244" y="475" width="79" height="30"/>
                                 <state key="normal" title="WHAT? No!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -51,12 +45,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="1JW-SR-dOl" secondAttribute="trailing" constant="135" id="635-Z0-2qw"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="1JW-SR-dOl" secondAttribute="bottom" constant="76" id="CVW-ui-3zI"/>
-                            <constraint firstItem="1JW-SR-dOl" firstAttribute="top" secondItem="cbO-Ik-AZn" secondAttribute="bottom" constant="191" id="DEp-BY-jWR"/>
-                            <constraint firstItem="iLD-Ck-5dC" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="177" id="Dkv-kD-IN0"/>
-                            <constraint firstItem="iLD-Ck-5dC" firstAttribute="top" secondItem="cbO-Ik-AZn" secondAttribute="bottom" constant="191" id="G2H-OD-PZy"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="iLD-Ck-5dC" secondAttribute="bottom" constant="76" id="bwE-3J-HSz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cbO-Ik-AZn" secondAttribute="trailing" constant="-16" id="dxA-8R-nAL"/>
                             <constraint firstItem="cbO-Ik-AZn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="ist-GN-VYR"/>
                             <constraint firstItem="cbO-Ik-AZn" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="iu7-bk-AaV"/>
@@ -64,6 +52,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2c2-u6-qN1"/>
+                    <connections>
+                        <outlet property="textView" destination="cbO-Ik-AZn" id="N6t-VY-Zxj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

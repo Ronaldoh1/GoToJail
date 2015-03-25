@@ -7,23 +7,35 @@
 //
 
 #import "RootViewController.h"
+#import <CoreLocation/CoreLocation.h>
 
-@interface RootViewController ()
-
+@interface RootViewController () <CLLocationManagerDelegate>
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+@property CLLocationManager *locationManager;
 @end
 
 @implementation RootViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    self.locationManager = [CLLocationManager new];
+    [self.locationManager requestWhenInUseAuthorization];
+    self.locationManager.delegate = self;
+
+
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma Mark-CLLocationManager
+
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
+       NSLog(@"%@", locations);
 }
+
 - (IBAction)findLocationOnTap:(UIButton *)sender {
+
+    [self.locationManager startUpdatingLocation];
 }
 
 - (IBAction)notAllowedLocationOnTap:(UIButton *)sender {
