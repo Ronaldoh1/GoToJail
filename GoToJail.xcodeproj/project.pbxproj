@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		F2BF32821AC3296E00616B10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BF32811AC3296E00616B10 /* main.m */; };
 		F2BF32851AC3296E00616B10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BF32841AC3296E00616B10 /* AppDelegate.m */; };
-		F2BF32881AC3296E00616B10 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BF32871AC3296E00616B10 /* ViewController.m */; };
+		F2BF32881AC3296E00616B10 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BF32871AC3296E00616B10 /* RootViewController.m */; };
 		F2BF328B1AC3296E00616B10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2BF32891AC3296E00616B10 /* Main.storyboard */; };
 		F2BF328D1AC3296E00616B10 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2BF328C1AC3296E00616B10 /* Images.xcassets */; };
 		F2BF32901AC3296E00616B10 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2BF328E1AC3296E00616B10 /* LaunchScreen.xib */; };
 		F2BF329C1AC3296E00616B10 /* GoToJailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BF329B1AC3296E00616B10 /* GoToJailTests.m */; };
+		F2BF32A61AC3297C00616B10 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BF32A51AC3297C00616B10 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,15 @@
 		F2BF32811AC3296E00616B10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F2BF32831AC3296E00616B10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F2BF32841AC3296E00616B10 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F2BF32861AC3296E00616B10 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F2BF32871AC3296E00616B10 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F2BF32861AC3296E00616B10 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		F2BF32871AC3296E00616B10 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		F2BF328A1AC3296E00616B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2BF328C1AC3296E00616B10 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F2BF328F1AC3296E00616B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F2BF32951AC3296E00616B10 /* GoToJailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoToJailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2BF329A1AC3296E00616B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2BF329B1AC3296E00616B10 /* GoToJailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoToJailTests.m; sourceTree = "<group>"; };
+		F2BF32A51AC3297C00616B10 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2BF32A61AC3297C00616B10 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		F2BF32731AC3296E00616B10 = {
 			isa = PBXGroup;
 			children = (
+				F2BF32A51AC3297C00616B10 /* CoreLocation.framework */,
 				F2BF327E1AC3296E00616B10 /* GoToJail */,
 				F2BF32981AC3296E00616B10 /* GoToJailTests */,
 				F2BF327D1AC3296E00616B10 /* Products */,
@@ -83,8 +87,8 @@
 			children = (
 				F2BF32831AC3296E00616B10 /* AppDelegate.h */,
 				F2BF32841AC3296E00616B10 /* AppDelegate.m */,
-				F2BF32861AC3296E00616B10 /* ViewController.h */,
-				F2BF32871AC3296E00616B10 /* ViewController.m */,
+				F2BF32861AC3296E00616B10 /* RootViewController.h */,
+				F2BF32871AC3296E00616B10 /* RootViewController.m */,
 				F2BF32891AC3296E00616B10 /* Main.storyboard */,
 				F2BF328C1AC3296E00616B10 /* Images.xcassets */,
 				F2BF328E1AC3296E00616B10 /* LaunchScreen.xib */,
@@ -219,7 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2BF32881AC3296E00616B10 /* ViewController.m in Sources */,
+				F2BF32881AC3296E00616B10 /* RootViewController.m in Sources */,
 				F2BF32851AC3296E00616B10 /* AppDelegate.m in Sources */,
 				F2BF32821AC3296E00616B10 /* main.m in Sources */,
 			);
